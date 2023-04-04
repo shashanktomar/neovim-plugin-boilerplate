@@ -44,4 +44,3 @@ deps: ## installs `mini.nvim`, used for both the tests and documentation.
 
 setup: ## a one time setup to bootstrap your repo
 	./scripts/setup.sh
-

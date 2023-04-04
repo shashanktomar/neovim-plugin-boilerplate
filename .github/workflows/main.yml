@@ -38,7 +38,7 @@ jobs:
           version: v0.8.3
 
       - name: generate documentation
-        run: make documentation-ci
+        run: make docs-ci
 
       - name: check docs diff
         run: exit $(git status --porcelain doc | wc -l | tr -d " ")

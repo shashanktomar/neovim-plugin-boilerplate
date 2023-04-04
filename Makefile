@@ -35,7 +35,7 @@ lint: ## performs a lint check and fixes issue if possible, following the config
 docs: ## generates the documentation.
 	nvim --headless --noplugin -u ./scripts/minimal_init.lua -c "lua require('mini.doc').generate()" -c "qa!"
 
-docs-ci: deps documentation ## documentation target for CI
+docs-ci: deps docs ## documentation target for CI
 
 ##@ Other Targets
 deps: ## installs `mini.nvim`, used for both the tests and documentation.
